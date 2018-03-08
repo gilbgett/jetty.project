@@ -248,6 +248,7 @@ set PR_STOPPARAMS=--stop;STOP.KEY="%STOPKEY%";STOP.PORT=%STOPPORT%;STOP.WAIT=10
 
 "%PR_INSTALL%" //IS/%SERVICE_NAME% ^
   --DisplayName="%SERVICE_NAME%" ^
+  --StartPath="%JETTY_BASE%"
   --Install="%PR_INSTALL%" ^
   --Startup="%PR_STARTUP%" ^
   --LogPath="%PR_LOGPATH%" ^
